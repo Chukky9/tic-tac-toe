@@ -1,0 +1,47 @@
+html {
+    background: #214A2D;
+    font-family: 'Courgette', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    border: 10px solid #F7B85E;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.842);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.2em;
+}
+
+.container button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background: #F7B85E;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.home h2 {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 3em;
+}
