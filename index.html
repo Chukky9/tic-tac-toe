@@ -8,15 +8,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="backdrop"></div>
+        <div id="backdrop"></div>
         <div class="home">
             <h2>WELCOME!</h2>
-            <div class="container">
+            <div class="new-game">
                 <h3>New Game</h3>
-                <button>VS. Player</button>
-                <button>VS. Al</button>
+                <button id="vs-player">VS. Player</button>
+                <button id="vs-al">VS. Al</button>
             </div>
         </div>
+        <section>
+            <div class="game-div">
+            <h1 class="game-title"></h1>
+            <div class="container">
+                <div data-cell-index="0" class="cell"></div>
+                <div data-cell-index="1" class="cell"></div>
+                <div data-cell-index="2" class="cell"></div>
+                <div data-cell-index="3" class="cell"></div>
+                <div data-cell-index="4" class="cell"></div>
+                <div data-cell-index="5" class="cell"></div>
+                <div data-cell-index="6" class="cell"></div>
+                <div data-cell-index="7" class="cell"></div>
+                <div data-cell-index="8" class="cell"></div>
+            </div>
+            <h2 class="game-status"></h2>
+            <button class="game-restart">RESTART</button>
+            <button class="game-close">CLOSE</button>
+        </div>
+        </section>
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="./script.js"></script>
 </body>
