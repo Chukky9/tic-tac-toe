@@ -1,3 +1,6 @@
+import './style.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+
 //I create a factory function to create player objects.
 function myObj(name) {
   let obj = Object.create(myObj.prototype);
