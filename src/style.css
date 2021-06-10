@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-
 :root {
   --orange: #f7b85e;
   --green: #092511;
@@ -7,9 +5,12 @@
   --black: rgba(0, 0, 0, 0.842);
 }
 
-html {
+body {
   background: var(--green);
-  font-family: "Courgette", cursive;
+}
+
+.container-fluid {
+  padding: 0px;
 }
 
 .new-game {
@@ -18,7 +19,7 @@ html {
   justify-content: space-evenly;
   align-items: center;
   width: 300px;
-  border: 10px solid #f7b85e;
+  border: 10px solid var(--orange);
   height: 300px;
   background: var(--black);
   color: var(--white);
@@ -42,7 +43,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -53,7 +54,7 @@ html {
   text-align: center;
   color: var(--white);
   font-style: italic;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 3em;
 }
 
@@ -76,12 +77,17 @@ html {
   position: relative;
   transition: 0.3s ease;
   transform: scale(0);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
+.cell-container {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  width: 305px;
+  width: 320px;
   margin: 50px auto;
   background: var(--green);
   border: 10px solid var(--orange);
@@ -124,4 +130,25 @@ section h2 {
 
 .new-game button:hover {
   transform: scale(1.03);
+}
+
+@media only screen and (max-width: 350px) {
+  .cell-container {
+    width: 280px;
+  }
+
+  .cell {
+    width: 85px;
+    height: 85px;
+  }
+
+  .game-status > h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .game-div button {
+    margin: 5px;
+  }
 }
